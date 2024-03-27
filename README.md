@@ -1,1 +1,1 @@
-Type Script project from scratch.
+Type Script projects from scratch.
