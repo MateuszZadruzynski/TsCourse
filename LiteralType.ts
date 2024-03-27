@@ -1,5 +1,7 @@
-let markAge: number | string;
-let julieAge: number | string;
+type Combined = number  | boolean | string;
+
+let markAge: Combined ;
+let julieAge: Combined;
 
 // let markAgeAsString: string;
 // let julieAgeAsString: string;
@@ -10,7 +12,7 @@ enum resultType {
     boolean
 }
 
-function GeneralPurposeAddWithResultType(variableOne:number | boolean | string, variableTwo:number  | boolean | string, resultConversion: resultType) 
+function GeneralPurposeAddWithResultType(variableOne: Combined, variableTwo: Combined, resultConversion: resultType) 
 {
     let result;
     if(typeof variableOne === 'number' && typeof variableTwo === 'number' || resultConversion == resultType.number)
