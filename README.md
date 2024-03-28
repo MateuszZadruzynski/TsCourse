@@ -11,3 +11,6 @@ descrition: watch changes in [name] file
 Automatic compliation (multiple files):
 comand : tsc --init
 descrition: create tsconfig.json
+useful additional configuration:
+* "exclude" : ["node_modules","file.ts"] - exclude files from watch list
+* "include" : ["file.ts", "pages"] - include file/folder to watch
