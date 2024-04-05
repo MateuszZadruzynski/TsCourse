@@ -14,14 +14,13 @@ function AddStrings(numberOne, numberTwo) {
     console.log(typeof numberOne);
     return numberOne + numberTwo;
 }
-const stringOne = "Stworzyłem "; //5 - w przypadku podstawienia liczby błąd w 28 
+const stringOne = "Stworzyłem ";
 const stringTwo = "zdanie.";
-const resultAddStrings = AddStrings(stringOne, stringTwo); // w przypadku TS widzimy od razu czy typ zmiennej się zgadza
+const resultAddStrings = AddStrings(stringOne, stringTwo);
 console.log("Wynik łączenia stringów to: " + resultAddStrings);
 console.log("Boolean");
 function AddBools(numberOne, numberTwo) {
-    if (typeof numberOne === 'boolean' && typeof numberTwo === 'boolean') //sprawdzanie typu jak w JS
-     {
+    if (typeof numberOne === 'boolean' && typeof numberTwo === 'boolean') {
         console.log(typeof numberOne);
         return numberOne && numberTwo;
     }

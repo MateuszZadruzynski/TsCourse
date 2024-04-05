@@ -1,10 +1,4 @@
 "use strict";
-// let PC:{
-//     ram: [number, string,RAM_Type],
-//     gpu: [number, string],
-//     ssd: [number, string],
-//     extensions: [number, string[]]
-// }
 var RAM_Type;
 (function (RAM_Type) {
     RAM_Type[RAM_Type["DDR3"] = 3] = "DDR3";

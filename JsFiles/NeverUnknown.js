@@ -1,6 +1,5 @@
 "use strict";
-//let userInput: any; <-- wszystko nie musi być jakiś typ
-let userInput; //<-- musi być jakiś typ
+let userInput;
 let userName;
 userInput = 5;
 userInput = true;

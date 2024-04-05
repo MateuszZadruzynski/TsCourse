@@ -10,7 +10,7 @@ function addAndHandle(an, bn, cb) {
     cb(result);
 }
 printResult(add(10, 17));
-let combinedValues; //przyjmuje dwa parametry musi być funckjną i zwracać liczbę
+let combinedValues;
 combinedValues = add;
 console.log(combinedValues(5, 5));
 addAndHandle(10, 20, (result) => {
