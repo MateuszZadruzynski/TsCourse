@@ -1,5 +1,6 @@
-var markAge;
-var julieAge;
+"use strict";
+let markAge;
+let julieAge;
 // let markAgeAsString: string;
 // let julieAgeAsString: string;
 var resultType;
@@ -9,7 +10,7 @@ var resultType;
     resultType[resultType["boolean"] = 2] = "boolean";
 })(resultType || (resultType = {}));
 function GeneralPurposeAddWithResultType(variableOne, variableTwo, resultConversion) {
-    var result;
+    let result;
     if (typeof variableOne === 'number' && typeof variableTwo === 'number' || resultConversion == resultType.number)
         result = +variableOne + +variableTwo;
     else if (typeof variableOne === 'string' && typeof variableTwo === 'string' || resultConversion == resultType.string)
@@ -36,11 +37,12 @@ function GeneralPurposeAddWithResultType(variableOne, variableTwo, resultConvers
 }
 markAge = 10;
 julieAge = 22;
-var combinedAgesToNumber = GeneralPurposeAddWithResultType(markAge, julieAge, resultType.number);
+const combinedAgesToNumber = GeneralPurposeAddWithResultType(markAge, julieAge, resultType.number);
 console.log("Combined age of: " + markAge + " + " + julieAge + " is " + combinedAgesToNumber);
 // markAgeAsString = '10';
 // julieAgeAsString = '22';
 markAge = '15';
 julieAge = '2';
-var combinedAgesStringsToNumber = GeneralPurposeAddWithResultType(markAge, julieAge, resultType.number);
+const combinedAgesStringsToNumber = GeneralPurposeAddWithResultType(markAge, julieAge, resultType.number);
 console.log("Combined age of: " + markAge + " + " + julieAge + " is " + combinedAgesStringsToNumber);
+//# sourceMappingURL=LiteralType.js.map

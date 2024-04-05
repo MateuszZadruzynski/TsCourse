@@ -1,3 +1,4 @@
+"use strict";
 var Cities;
 (function (Cities) {
     Cities[Cities["Bydgoszcz"] = 0] = "Bydgoszcz";
@@ -9,7 +10,7 @@ console.log("Skrytki w miastach: ");
 for (var city in Cities) {
     console.log(city);
 }
-var person;
+let person;
 person = {
     name: 'mateusz',
     age: 25,
@@ -18,3 +19,4 @@ person = {
 };
 console.log("\n");
 console.log("Pan " + person.name.toUpperCase() + " lat " + person.age + " posiada w " + person.city + " nastpępujące przedmioty " + person.items + " w deopozycie.");
+//# sourceMappingURL=Objects.js.map
